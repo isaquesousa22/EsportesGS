@@ -10,15 +10,13 @@
     tools:context=".MenuPrincipalActivity">
 
 
-
     <ImageView
         android:id="@+id/imgMenuPrincipal"
-        android:scaleType="centerCrop"
-        android:layout_gravity= "center_vertical"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/logo"/>
-
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
 
 
 </LinearLayout>
