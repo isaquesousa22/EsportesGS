@@ -64,5 +64,13 @@ public class ItensActivity extends AppCompatActivity {
 
             }
         });
+
+        idViewPagerItens.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                TablayoutItens.getTabAt(position).select();
+            }
+        });
     }
 }
