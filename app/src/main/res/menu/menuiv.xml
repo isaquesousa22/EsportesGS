@@ -1,58 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigationView">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <menu >
-        <item
-            android:id="@+id/main_item"
-            android:title="">
-            <menu>
-                <item
-                    android:id="@+id/search_item"
-                    android:icon=""
-                    android:title=""
-                    android:checkable="true"
-                    app:showAsAction="ifRoom"/>
-                <item
-                    android:id="@+id/rotation_item"
-                    android:icon=""
-                    android:title=""
-                    android:checkable="true"
-                    app:showAsAction="ifRoom"/>
-                <item
-                    android:id="@+id/accelerator_item"
-                    android:icon=""
-                    android:title="@"
-                    android:checkable="true"
-                    app:showAsAction="ifRoom"/>
-                <item
-                    android:id="@+id/dashboard_item"
-                    android:icon=""
-                    android:title="@"
-                    android:checkable="true"
-                    app:showAsAction="ifRoom"/>
-            </menu>
-        </item>
-        <item
-            android:id="@+id/labels_item"
-            android:title="@string/labels_subheader_title">
-            <menu>
-                <item
-                    android:id="@+id/label_one"
-                    android:icon="@drawable/ic_label_24px"
-                    android:title="@string/label_one_title"
-                    android:checkable="true"
-                    app:showAsAction="ifRoom"/>
-                <item
-                    android:id="@+id/label_two"
-                    android:icon="@drawable/ic_label_24px"
-                    android:title="@string/label_two_title"
-                    android:checkable="true"
-                    app:showAsAction="ifRoom"/>
-            </menu>
-        </item>
+<group>
+    <item
+        android:id="@+id/inbox_item"
+        android:icon="@drawable/favorite"
+        android:title="favorite"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/carrinho_item"
+        android:icon="@drawable/carrinho"
+        android:title="meu carrinho"
+        android:checkable="true"
 
-    </menu>
+        />
 
+</group>
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/profile_item"
+                android:icon="@drawable/profile"
+                android:title="my profile"
+                android:checkable="true"/>
+
+            <item
+                android:id="@+id/login_item"
+                android:icon="@drawable/login"
+                android:title="login"
+                android:checkable="true"/>
+
+        </menu>
+
+    </item>
 </menu>
